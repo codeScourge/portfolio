@@ -1,0 +1,16 @@
+#go_back_svg {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    pointer-events: all;
+    cursor: pointer;
+
+    transition: all ease 0.3s;
+    &:hover {
+        transform: translateX(-10px)
+    }
+}

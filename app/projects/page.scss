@@ -1,0 +1,31 @@
+#menu {
+    gap: 10rem;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    &--left {
+        flex-flow: row;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    &--right {
+        flex-flow: row-reverse;
+        text-align: right;
+        justify-content: flex-start;
+    }
+
+    &--top {
+        flex-flow: column;
+        text-align: center;
+
+        gap: 2rem;
+    }
+
+}
