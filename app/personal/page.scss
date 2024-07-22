@@ -1,5 +1,5 @@
 #menu {
-    gap: 4rem;
+    gap: 6rem;
 }
 
 .block {
@@ -10,32 +10,4 @@
     text-align: center;
 
     gap: 0.5rem;
-}
-
-.books {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-
-
-    margin-top: 2rem;
-
-    &__item {
-        width: 120px;
-        height: 190px;
-
-        object-fit: cover;
-        object-position: center;
-
-        border: none;
-        border-radius: 5px;
-
-        transition: all 0.4s ease-out;
-
-        &:hover {
-            z-index: 999999;
-            box-shadow: 0px 0px 30px black;
-        }
-    }
 }

@@ -112,6 +112,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  overflow-y: scroll;
 }
 
 
@@ -119,13 +121,15 @@ main {
   height: 100vh;
   width: 80%;
 
-  overflow-y: scroll;
-
   display: flex;
   flex-flow: column;
   align-items: center;
 
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  box-sizing: border-box;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
+a {
+  color: #33FF33;
+}

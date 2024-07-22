@@ -2,6 +2,24 @@
     gap: 10rem;
 }
 
+.column {
+    width: 100%;
+
+    gap: 1.5rem;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    &--top {
+        align-items: center;
+    }
+
+    &--left {
+        align-items: flex-start;
+    }
+}
+
 .project {
     width: 100%;
     display: flex;
@@ -9,17 +27,13 @@
 
     gap: 1.5rem;
 
+
     &--left {
         flex-flow: row;
         text-align: left;
         justify-content: flex-start;
     }
 
-    &--right {
-        flex-flow: row-reverse;
-        text-align: right;
-        justify-content: flex-start;
-    }
 
     &--top {
         flex-flow: column;
@@ -28,4 +42,21 @@
         gap: 2rem;
     }
 
+
+    &__text {
+        &--left {
+            width: min(400px, 100%);
+        }
+
+        &--top {
+            width: min(500px, 100%)
+        }
+    }
+
+    &__img {
+        border: 1px solid white;
+        border-radius: 5px;
+    }
 }
+
+
