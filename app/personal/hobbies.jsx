@@ -37,7 +37,7 @@ export default function Hobbies() {
         name="Cooking" 
         text={`
           If I'm not going to make in technology, I would go ahead and work in a kitchen. From italian Pasta Alla Gricia, 
-          or indian chicken biryani, over to Persian Kebab Koobideh, cooking is always a good way to clear your head or
+          or indian chicken biryani, over to Persian Kebab Koobideh, cooking is always a good way to relax or
           impress a girl
         `}
         alt="Picture of a Bolognese that I cooked"
