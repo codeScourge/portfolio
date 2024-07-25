@@ -99,7 +99,7 @@ I will try to monetize or open-source this soon.
 
         <div id='easter-egg'>
             <a href="https://my-game-plum.vercel.app/">click &#9752; me</a>
-            <p>This is a weekend project I built to teach myself how to build multi-user / collaboratibe webapps using liveblocks. It is a clicker game, where you can "attack" people in your lobby by forcing them to click a confirm button or typing in a text.</p>
+            <p>This is a weekend project I built to teach myself how to build multi-user / collaboratibe webapps using liveblocks. It is a clicker game, where you can attack people in your lobby by forcing them to click a confirm button or typing in a text.</p>
         </div>
       </>
     );
