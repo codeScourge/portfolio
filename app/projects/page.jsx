@@ -43,40 +43,49 @@ export default function Home() {
 
 <ProjectLeft text={`
 My web development journey started with a small passion project. It was a text-adventure game generation engine built 
-over the OpenAI API. Through vector search and prompting techniques I could
+over the OpenAI API. 
+\n
+Through vector search and prompting techniques I could
 provide ambient music/visuals fitting to the current situation, as well as a working inventory and health system.
-
-It was built using Flask, served by Gunicorn + Nginx, and deployed on an EC2 instance. A demo of the very first
-version (still on Gradio) can be seen [here](https://www.youtube.com/watch?v=O1LhO1u-Ka0&t=307s)
+\n
+It was built using Flask, served by Gunicorn + Nginx, and deployed on an EC2 instance. 
+\n
+This was also the first time taking care of Domain, DNS, and SSL certificates.
+\n
+A demo of the prototype version (still on Gradio) can be seen [here](https://www.youtube.com/watch?v=O1LhO1u-Ka0&t=307s)
         `} title={"AI text adventure game"} img_source={chatrpg} alt_tag={""} height={250}/>
 
 <ProjectTop text={`
 For a customer, I built an automatic data processing pipeline for analyzing content.
-
+\n
 Articles from the web were scraped using Selenium and BS4 on a serverless lambda function.
-
+\n
 The data was then processed using OpenAI and Huggingface models.
-
+\n
 Integration into Airtable allowed the results to be easily interpreted by humans.
-
+\n
 Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
         `} title={"Data-processing Pipeline"} img_source={govshare} alt_tag={"Flowchart of the process"} height={200}/>
 
 <ProjectLeft text={`
 As a side-project I developed and monetized a translator AI-Telegram bot, which could be prompted to use
 dialects or specific speaking styles.
-  
+\n
 Subscriptions were done using YooKassa (Stripe Alternative).
 It also includes an admin panel built using ReactJS.
-  
+\n
 The russian version is live [here](https://t.me/AlterVoice_bot?start=portfolio), it was marketed using YandexAds and
 posts in Telegram Channels.
         `} title={"Telegram Bot"} img_source={telegram} alt_tag={""} height={250}/>
 
 <ProjectTop text={`
 I am currently building [ShipPil](https://shippil.xyz),the Boilerplate for Flask developers. 
+\n
 It has everything, from a full bundling setup with  ESLint and PostCS, to a powerful CDN for protection and performance.
+\n
 The infrastructure (runtime on Lambda Functions and NoSQL DynamoDB as database) is defined as code using the "Serverless Framework".
+\n
+A strong emphasis is also put on security, taking care of things like CSRF, CSP, and input cleaning. 
 See a detailed documentation [here](https://ivan.mintlify.app/intro/00_motivation)
 
         `} title={"Development and Deployment Boilerplate"} img_source={shippil} alt_tag={"Grafic showing how the development and deployment using this boilerplate works"} height={250}/>
