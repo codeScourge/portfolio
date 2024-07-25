@@ -83,7 +83,7 @@ I am currently building [ShipPil](https://shippil.xyz),the Boilerplate for Flask
 \n
 It has everything, from a full bundling setup with  ESLint and PostCS, to a powerful CDN for protection and performance.
 \n
-The infrastructure (runtime on Lambda Functions and NoSQL DynamoDB as database) is defined as code using the "Serverless Framework".
+The infrastructure (runtime on Lambda Functions and NoSQL DynamoDB as database) is defined as code using the Serverless Framework.
 \n
 A strong emphasis is also put on security, taking care of things like CSRF, CSP, and input cleaning. 
 See a detailed documentation [here](https://ivan.mintlify.app/intro/00_motivation)
