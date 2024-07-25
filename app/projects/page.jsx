@@ -8,6 +8,7 @@ import chrome from "../../public/projects/chrome.png"
 import govshare from "../../public/projects/govshare.png"
 import shippil from "../../public/projects/shippil.png"
 import telegram from "../../public/projects/telegram.png"
+import chatrpg from "../../public/projects/chatrpg.png"
 
 function Project({class_appendix, title, text, img_source, alt_tag, height}) {
     return (
@@ -40,32 +41,42 @@ export default function Home() {
       <>
         <GoBackSVG/>
 
+<ProjectLeft text={`
+My web development journey started with a small passion project. I was a text-adventure game generation engine built 
+over the OpenAI API. Through vector search and prompting techniques I could
+provide ambient music/visuals fitting to the current situation, as well as a working inventory and health system.
+
+It was built using Flask, served by Gunicorn + Nginx, and deployed on an EC2 instance. A demo of the very first
+version (still on Gradio) can be seen [here](https://www.youtube.com/watch?v=O1LhO1u-Ka0&t=307s)
+        `} title={"AI text adventure game"} img_source={chatrpg} alt_tag={""} height={250}/>
+
 <ProjectTop text={`
-For a customer at our AI agency, I built an automatic data processing pipeline for analyzing content.
+For a customer, I built an automatic data processing pipeline for analyzing content.
 
-Scraping was done using Selenium and BS4.
+Articles from the web were scraped using Selenium and BS4 on a serverless lambda function.
 
-The Data was then processed using OpenAI and Huggingface models.
+The data was then processed using OpenAI and Huggingface models.
 
-Integration into Airtable allowed the results to be easily used by humans.
+Integration into Airtable allowed the results to be easily interpreted by humans.
 
 Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
-        `} title={"AI data-processing Pipeline"} img_source={govshare} alt_tag={"Flowchart of the process"} height={200}/>
+        `} title={"Data-processing Pipeline"} img_source={govshare} alt_tag={"Flowchart of the process"} height={200}/>
 
 <ProjectLeft text={`
-Built and monetized smart translator Telegram bot.
+As a side-project I developed and monetized an translator AI-Telegram bot, which could be prompted to use
+dialects or specific speaking styles.
   
-Subscriptions done using YooKassa
-(Stripe Alternative)
+Subscriptions were done using YooKassa (Stripe Alternative).
+It also includes an admin panel built using ReactJS
   
-Russian version live [here](https://t.me/AlterVoice_bot?start=portfolio), it was marketed using YandexAds and
-Posts in Telegram Channels.
+The russian version is live [here](https://t.me/AlterVoice_bot?start=portfolio), it was marketed using YandexAds and
+posts in Telegram Channels.
         `} title={"Telegram Bot"} img_source={telegram} alt_tag={""} height={250}/>
 
 <ProjectTop text={`
 I am currently building [ShipPil](https://shippil.xyz), the 
-most advanced Boilerplate for Flask developers. Everything is contained
-with IAS (Infrastructure as Code) using the "Serverless Framework". It has everything, from a full bundling setup with 
+most advanced Boilerplate for Flask developers. The deployment is contained
+as IAS (Infrastructure as Code) using the "Serverless Framework". It has everything, from a full bundling setup with 
 ESLint and PostCS, to a powerful CDN for protection and performance.
 See a detailed documentation [here](https://ivan.mintlify.app/intro/00_motivation)
 
@@ -77,6 +88,8 @@ I built a Chrome-Plugin for quickly
 getting leads from GitHub and exporting them CSV.
 I will try to monetize or open-source this soon.
         `} title={"Lead Generation Chrome Plugin"} img_source={chrome} alt_tag={"Screenshot of the Plugin"} height={200}/>
+
+<a href="https://my-game-plum.vercel.app/" style={{marginTop: "300vh", textDecoration: "none"}}>&#9752;</a>
       </>
     );
   }
