@@ -36,9 +36,7 @@ export default function Hobbies() {
       <Hobby 
         name="Cooking" 
         text={`
-          If I'm not going to make in technology, I would go ahead and work in a kitchen. From italian Pasta Alla Gricia, 
-          or indian chicken biryani, over to Persian Kebab Koobideh, cooking is always a good way to relax or
-          impress a girl
+          Cooking is the highest form of art, also it's always a good way for me to relax or to impress a girl
         `}
         alt="Picture of a Bolognese that I cooked"
         src={cooking}/>
@@ -46,8 +44,8 @@ export default function Hobbies() {
       <Hobby 
         name="Snowboarding" 
         text={`
-            +20/+31 hard Freeride Euro-Carve build (picture is asymetrical duck on freestyle though). 
-            If this makes sense, I like you <3
+            +20/+31 hard-boot Freeride build for eurocarving (picture is  obviously asymetrical duck on freestyle though). 
+            If this makes sense, I like you
         `}
         alt="Picture of me on a snowboard"
         src={snowboarding}/>
@@ -55,25 +53,25 @@ export default function Hobbies() {
       <Hobby 
         name="Reading" 
         text={`
-            see above
+            The most fascinating thing to me is that you can just learn anything you want and by that do a software update to your brain
         `}
         alt="Book, Coffee, and rolling equipment"
         src={read}/>
 
-      <Hobby 
+      {/* <Hobby 
         name="Motorsport" 
         text={`
             Please hire me so I can buy a motorcycle again
         `}
         alt="Picture of me on a motorcycle"
-        src={motor}/>
+        src={motor}/> */}
 
       <Hobby 
         name="Gym" 
         text={`
-            No man has the right to be an amateur in the matter of physical training ~some greek fuck
+            No man has the right to be an amateur in the matter of physical training ~some greek guy
         `}
-        alt="Picture of me in my home-town gym"
+        alt="Picture of me in my hometown gym"
         src={gym}/>
       </div>
     )

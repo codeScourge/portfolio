@@ -15,8 +15,8 @@ export default function Home() {
             <p>
               I was born in Russia and moved to Germany at 6 years old. With 14 I started to get into ML and programming in general. 
               While It was shallow at best, one year
-              later I used that knowledge to cofound an AI agency. During that time I taught myself Web Development
-              and the Infrastructue behind it on the Cloud. Recently moved to Berlin to pursue my studies at the 
+              later I used that knowledge and interest to cofound an AI agency. During that time I taught myself Web Development
+              and the Infrastructue behind it on the Cloud. Recently I moved to Berlin to pursue my studies at the 
               CODE University of Applied Sciences
               </p>
         </div>

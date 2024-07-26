@@ -9,6 +9,7 @@ import govshare from "../../public/projects/govshare.png"
 import shippil from "../../public/projects/shippil.png"
 import telegram from "../../public/projects/telegram.png"
 import chatrpg from "../../public/projects/chatrpg.png"
+import clicker from "../../public/projects/clicker.png"
 
 function Project({class_appendix, title, text, img_source, alt_tag, height}) {
     return (
@@ -42,10 +43,10 @@ export default function Home() {
         <GoBackSVG/>
 
 <ProjectLeft text={`
-My web development journey started with a small passion project. It was a text-adventure game generation engine built 
+My web development journey started with a text-adventure generation engine built 
 over the OpenAI API. 
 \n
-Through vector search and prompting techniques I could
+Through vector-search and prompting techniques I could
 provide ambient music/visuals fitting to the current situation, as well as a working inventory and health system.
 \n
 It was built using Flask, served by Gunicorn + Nginx, and deployed on an EC2 instance. 
@@ -56,9 +57,9 @@ A demo of the prototype version (still on Gradio) can be seen [here](https://www
         `} title={"AI text adventure game"} img_source={chatrpg} alt_tag={""} height={250}/>
 
 <ProjectTop text={`
-For a customer, I built an automatic data processing pipeline for analyzing content.
+For a client at our AI-agency, I built an automatic data processing pipeline for analyzing content.
 \n
-Articles from the web were scraped using Selenium and BS4 on a serverless lambda function.
+Articles from the web were scraped using Selenium and BS4.
 \n
 The data was then processed using OpenAI and Huggingface models.
 \n
@@ -66,6 +67,7 @@ Integration into Airtable allowed the results to be easily interpreted by humans
 \n
 Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
         `} title={"Data-processing Pipeline"} img_source={govshare} alt_tag={"Flowchart of the process"} height={200}/>
+
 
 <ProjectLeft text={`
 As a side-project I developed and monetized a translator AI-Telegram bot, which could be prompted to use
@@ -97,9 +99,15 @@ getting leads from GitHub and exporting them CSV.
 I will try to monetize or open-source this soon.
         `} title={"Lead Generation Chrome Plugin"} img_source={chrome} alt_tag={"Screenshot of the Plugin"} height={200}/>
 
+<ProjectTop text={`
+[This](https://my-game-plum.vercel.app/) is a weekend project I built on NextJS to teach myself how to build multi-user / collaboratibe webapps 
+using liveblocks, where I had to implement lobbies and shared state. It's a clicker game, 
+where you can attack people in your lobby by forcing them to click a confirm button or typing in a text.
+        `} title={"Collaborative Clicker Game"} img_source={clicker} alt_tag={"Screenshot of the Game"} height={300}/>
+
+
         <div id='easter-egg'>
-            <a href="https://my-game-plum.vercel.app/">click &#9752; me</a>
-            <p>This is a weekend project I built to teach myself how to build multi-user / collaboratibe webapps using liveblocks. It is a clicker game, where you can attack people in your lobby by forcing them to click a confirm button or typing in a text.</p>
+            <p>&#9752;</p>
         </div>
       </>
     );
