@@ -59,6 +59,22 @@
     }
 }
 
+/* switch left to top on mobile */ 
+@media (max-width: 640px) {
+    .column--left {
+        align-items: center;
+    }
+    .project--left {
+        flex-flow: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .project__text--left {
+        width: min(400px, 100%);
+    }
+}
+
 
 
 #easter-egg {

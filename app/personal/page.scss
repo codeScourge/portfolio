@@ -10,4 +10,10 @@
     text-align: center;
 
     gap: 0.5rem;
+
+    & ul {
+        & li {
+            text-align: left;
+        }
+    }
 }

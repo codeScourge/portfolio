@@ -81,7 +81,7 @@ posts in Telegram Channels.
         `} title={"Telegram Bot"} img_source={telegram} alt_tag={""} height={250}/>
 
 <ProjectTop text={`
-I am currently building [ShipPil](https://shippil.xyz),the Boilerplate for Flask developers. 
+I am currently building [ShipPil](https://shippil.xyz), the Boilerplate for Flask developers. 
 \n
 It has everything, from a full bundling setup with  ESLint and PostCS, to a powerful CDN for protection and performance.
 \n
