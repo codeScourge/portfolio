@@ -7,7 +7,7 @@ import "./page.scss"
 
 import GoBackSVG from "@/components/goback/comp";
 
-const mdFolder = 'markdown/blog';
+const mdFolder = path.join(process.cwd(), 'markdown', 'blog');
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join());
