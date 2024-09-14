@@ -40,7 +40,7 @@ function ProjectTop({text, title, img_source, alt_tag, height}) {
 export default function Home() {
     return (
       <>
-        <GoBackSVG/>
+        <GoBackSVG url="/" />
 
 <ProjectLeft text={`
 My web development journey started with a text-adventure generation engine built 
@@ -112,3 +112,7 @@ where you can attack people in your lobby by forcing them to click a confirm but
       </>
     );
   }
+
+
+
+
