@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown'
 import Image from "next/image";
 
-import GoBackSVG from '@/components/goba/comp';
+import GoBackSVG from '@/components/goback/comp';
 import "./page.scss"
 
 import chrome from "../../public/projects/chrome.png"
@@ -11,30 +11,7 @@ import telegram from "../../public/projects/telegram.png"
 import chatrpg from "../../public/projects/chatrpg.png"
 import clicker from "../../public/projects/clicker.png"
 
-function Project({class_appendix, title, text, img_source, alt_tag, height}) {
-    return (
-        <div className={`column column--${class_appendix}`}>
-            <h2>{title}</h2>
-            <div className={`project project--${class_appendix}`}>
-                <Image className={`project__img project__img--${class_appendix}`} 
-                    src={img_source} 
-                    alt={alt_tag} 
-                    height={height}
-                    placeholder="blur"
-                />
-                <ReactMarkdown className={`project__text project__text--${class_appendix}`}>{text}</ReactMarkdown>
-            </div>
-        </div>
-    )
-}
 
-function ProjectLeft({text, title, img_source, alt_tag, height}) {
-    return <Project class_appendix="left" title={title} text={text} img_source={img_source} alt_tag={alt_tag} height={height}/>
-}
-
-function ProjectTop({text, title, img_source, alt_tag, height}) {
-    return <Project class_appendix="top" title={title} text={text} img_source={img_source} alt_tag={alt_tag} height={height}/>
-}
 
 
 export default function Home() {
@@ -42,21 +19,28 @@ export default function Home() {
       <>
         <GoBackSVG url="/" />
 
-<ProjectLeft text={`
+
+        <div className="block">
+            <h2>ChatRPG</h2>
+            <p>
 My web development journey started with a text-adventure generation engine built 
 over the OpenAI API. 
-\n
+<br />
 Through vector-search and prompting techniques I could
 provide ambient music/visuals fitting to the current situation, as well as a working inventory and health system.
-\n
+<br />
 It was built using Flask, served by Gunicorn + Nginx, and deployed on an EC2 instance. 
-\n
+<br />
 This was also the first time taking care of Domain, DNS, and SSL certificates.
-\n
-A demo of the prototype version (still on Gradio) can be seen [here](https://www.youtube.com/watch?v=O1LhO1u-Ka0&t=307s)
-        `} title={"AI text adventure game"} img_source={chatrpg} alt_tag={""} height={250}/>
+            </p>
+        </div>
 
-<ProjectTop text={`
+        <hr />
+
+        <div className="block">
+            <h2>Data-processing Pipeline</h2>
+            <Image src={govshare} alt='Flowchart of the process' />
+            <p>
 For a client at our AI-agency, I built an automatic data processing pipeline for analyzing content.
 \n
 Articles from the web were scraped using Selenium and BS4.
@@ -66,48 +50,70 @@ The data was then processed using OpenAI and Huggingface models.
 Integration into Airtable allowed the results to be easily interpreted by humans.
 \n
 Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
-        `} title={"Data-processing Pipeline"} img_source={govshare} alt_tag={"Flowchart of the process"} height={200}/>
+            </p>
+        </div>
 
+        <hr />
 
-<ProjectLeft text={`
+        <div className="block">
+            <h2>Telegram Bot</h2>
+            <p>
 As a side-project I developed and monetized a translator AI-Telegram bot, which could be prompted to use
 dialects or specific speaking styles.
 \n
 Subscriptions were done using YooKassa (Stripe Alternative).
 It also includes an admin panel built using ReactJS.
 \n
-The russian version is live [here](https://t.me/AlterVoice_bot?start=portfolio), it was marketed using YandexAds and
-posts in Telegram Channels.
-        `} title={"Telegram Bot"} img_source={telegram} alt_tag={""} height={250}/>
+It was marketed using YandexAds and posts in Telegram Channels.
+            </p>
+        </div>
 
-<ProjectTop text={`
-I am currently building [ShipPil](https://shippil.xyz), the Boilerplate for Flask developers. 
+        <hr />
+
+        <div className="block">
+            <h2>Boilerplate</h2>
+            <Image src={shippil} alt='Screenshot of Graphic demonstating pros of the boilerplate' />
+            <p>
+I also built <a href="https://shippil.xyz">ShipPil</a>, the Boilerplate for Flask developers. 
 \n
 It has everything, from a full bundling setup with  ESLint and PostCS, to a powerful CDN for protection and performance.
 \n
 The infrastructure (runtime on Lambda Functions and NoSQL DynamoDB as database) is defined as code using the Serverless Framework.
 \n
 A strong emphasis is also put on security, taking care of things like CSRF, CSP, and input cleaning. 
-See a detailed documentation [here](https://ivan.mintlify.app/intro/00_motivation)
+See a detailed documentation <a href="https://ivan.mintlify.app/intro/00_motivation">here</a>
+            </p>
+        </div>
 
-        `} title={"Development and Deployment Boilerplate"} img_source={shippil} alt_tag={"Grafic showing how the development and deployment using this boilerplate works"} height={250}/>
+        <hr />
 
-<ProjectLeft text={`
+        <div className="block">
+            <h2>Chrome Plugin</h2>
+            <Image src={chrome} alt='Screenshot of the Plugin' />
+            <p>
 Having to do cold outreach for the first time,
 I built a Chrome-Plugin for quickly 
 getting leads from GitHub and exporting them CSV.
 I will try to monetize or open-source this soon.
-        `} title={"Lead Generation Chrome Plugin"} img_source={chrome} alt_tag={"Screenshot of the Plugin"} height={200}/>
+            </p>
+        </div>
 
-<ProjectTop text={`
-[This](https://my-game-plum.vercel.app/) is a weekend project I built on NextJS to teach myself how to build multi-user / collaboratibe webapps 
-using liveblocks, where I had to implement lobbies and shared state. It's a clicker game, 
+        {/* <hr />
+
+        <div className="block">
+            <h2>Collaborative Clicker Game</h2>
+            <p>
+<a href="https://my-game-plum.vercel.app/">This</a> is a weekend project I built on NextJS to teach myself how to build multi-user / collaboratibe webapps 
+using liveblocks, where I had to implement lobbies and shared state. It is a clicker game, 
 where you can attack people in your lobby by forcing them to click a confirm button or typing in a text.
-        `} title={"Collaborative Clicker Game"} img_source={clicker} alt_tag={"Screenshot of the Game"} height={300}/>
+See a detailed documentation <a href="https://ivan.mintlify.app/intro/00_motivation">here</a>
+            </p>
+            <Image src={clicker} alt='Screenshot of the Game' />
+        </div> */}
 
 
         <div id='easter-egg'>
-            <p>&#9752;</p>
+              <p>&#9752;</p>
         </div>
       </>
     );

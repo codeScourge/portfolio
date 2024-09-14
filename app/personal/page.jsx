@@ -1,10 +1,7 @@
 "use client";
+
 import "./page.scss"
-
-import GoBackSVG from "@/components/goba/comp";
-// import Hobbies from "./hobbies";
-// import Books from "./books";
-
+import GoBackSVG from "@/components/goback/comp";
 
 export default function Home() {
     return (
@@ -18,7 +15,8 @@ export default function Home() {
               and the Infrastructue behind it on the Cloud. Recently moved to Berlin to study at <a href="https://code.berlin/en/">CODE University of Applied Sciences Berlin</a>
             </p>
         </div>
-        
+
+        <hr />
 
         <div className="block">
           <h2>Stuff I like to do</h2>
@@ -31,27 +29,17 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="block">
-          <h2>Favorite Books</h2>
-          <p>Can be found at <a href="https://www.goodreads.com/user/show/181216131-ivan">GoodReads</a></p>
-        </div>
-
-
-
-
-        {/* <div className="block">
-          <h2>Favorite Books</h2>
-          <Books/>
-        </div>
+        <hr />
 
         <div className="block">
-          <h2>Stuff I Like To Do</h2>
-          <Hobbies />
-        </div> */}
+          <h2>Consumption</h2>
+          <p>Favorite Books can be found at <a href="https://www.goodreads.com/user/show/181216131-ivan">GoodReads</a></p>
+          <p>The same counts for <a href="https://myanimelist.net/animelist/sc0urge">that asian stuff</a></p>
+        </div>
 
         <div id='easter-egg'>
-            <p>&#9752;</p>
-        </div>
+              <p>&#9752;</p>
+          </div>
       </>
     );
   }

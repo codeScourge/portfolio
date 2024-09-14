@@ -3,7 +3,7 @@ import path from 'path';
 import Link from 'next/link';
 import matter from 'gray-matter';
 
-import GoBackSVG from "@/components/goba/comp";
+import GoBackSVG from "@/components/goback/comp";
 
 const mdFolder = 'markdown/blog';
 
@@ -35,16 +35,17 @@ export default async function PostsPage() {
   return (
     <>
       <GoBackSVG url="/"/>
-      <h1>Blog</h1>
-      <ul>
-        {posts.map(({ slug, frontmatter }) => (
-          <li key={slug}>
-            <Link href={`/blog/${slug}`}>
-              {frontmatter.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="block">
+        <ul>
+          {posts.map(({ slug, frontmatter }) => (
+            <li key={slug}>
+              <Link href={`/blog/${slug}`}>
+                {frontmatter.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }

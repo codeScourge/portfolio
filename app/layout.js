@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceMono = Space_Mono({fallback: "monospace", weight: ["400", "700"], subsets: ["latin"]});
 
 export const metadata = {
   title: "ivan ᓚᘏᗢ",
@@ -11,10 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main id="menu">
-          {children}
-        </main>
+      <body className={spaceMono.className}>
+        <div id="scroll-wrapper">
+          <main id="menu">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

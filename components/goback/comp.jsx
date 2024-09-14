@@ -10,7 +10,7 @@ export default function GoBackSVG({url}) {
         <g id="SVGRepo_iconCarrier">
             {" "}
             <path
-            stroke="#F7F7F7"
+            stroke="var(--FRONT_CLR)"
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={2}

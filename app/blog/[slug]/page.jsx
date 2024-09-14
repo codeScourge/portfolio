@@ -5,7 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import "./page.scss"
 
-import GoBackSVG from "@/components/goba/comp";
+import GoBackSVG from "@/components/goback/comp";
 
 const mdFolder = 'markdown/blog';
 
