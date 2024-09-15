@@ -1,0 +1,17 @@
+{
+    "question": "Do you handle really sensitive data like bank-transactions, where a non-consistent read or write would break everything?",
+    "answers": [
+        {
+            "text": "yes",
+            "nextNode": {
+                "recommendation": true
+            }
+        },
+        {
+            "text": "no",
+            "nextNode": {
+                "recommendation": false
+            }
+        }
+    ]
+}

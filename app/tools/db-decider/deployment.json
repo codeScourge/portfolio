@@ -1,0 +1,17 @@
+{
+    "question": "Are you an enterprise where you would save money by rolling your own database and have the ressources to use an entire engineer for managing that thing?",
+    "answers": [
+        {
+            "text": "yes",
+            "nextNode": {
+                "recommendation": true
+            }
+        },
+        {
+            "text": "no",
+            "nextNode": {
+                "recommendation": false
+            }
+        }
+    ]
+}

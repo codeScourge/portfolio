@@ -1,0 +1,47 @@
+{
+    "question": "Do you have highly relational data with many-to-many relationships?",
+    "answers": [
+      {
+        "text": "yes",
+        "nextNode": {
+          "question": "Do you have many join operations? Do the relationships hold their own data?",
+          "answers": [
+            {
+              "text": "yes",
+              "nextNode": {
+                "recommendation": "graph"
+              }
+            },
+            {
+              "text": "no",
+              "nextNode": {
+                "recommendation": "relational"
+              }
+            }
+          ]
+        }
+      },
+
+      {
+        "text": "no",
+        "nextNode": {
+          "question": "How can you best describe your data? a) a table (columns don't have to match between rows) or b) nested JSON",
+          "answers": [
+            {
+              "text": "a",
+              "nextNode": {
+                "recommendation": "wide-column"
+              }
+            },
+            {
+              "text": "b",
+              "nextNode": {
+                "recommendation": "document"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

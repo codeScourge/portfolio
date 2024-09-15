@@ -1,0 +1,17 @@
+{
+    "question": "Is your application really write heavy?",
+    "answers": [
+        {
+            "text": "yes",
+            "nextNode": {
+                "recommendation": true
+            }
+        },
+        {
+            "text": "no",
+            "nextNode": {
+                "recommendation": false
+            }
+        }
+    ]
+}
