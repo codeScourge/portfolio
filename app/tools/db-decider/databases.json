@@ -1,0 +1,83 @@
+[
+    {
+        "name": "PostgreSQL",
+        "attributes": {
+        "model": "Relational",
+        "own_deployment": true,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "MySQL",
+        "attributes": {
+        "model": "Relational",
+        "own_deployment": true,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "MongoDB",
+        "attributes": {
+        "model": "Document",
+        "own_deployment": true,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "Amazon Neptune",
+        "attributes": {
+        "model": "Graph",
+        "own_deployment": false,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "Apache Cassandra",
+        "attributes": {
+        "model": "Wide-Column",
+        "own_deployment": true,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "Google Cloud Firestore",
+        "attributes": {
+        "model": "Document",
+        "own_deployment": false,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "Redis",
+        "attributes": {
+        "model": "Key-Value",
+        "own_deployment": true,
+        "write_heavy": true,
+        "high_security": false
+        }
+    },
+    {
+        "name": "Amazon DynamoDB",
+        "attributes": {
+        "model": "Wide-Column",
+        "own_deployment": false,
+        "write_heavy": true,
+        "high_security": true
+        }
+    },
+    {
+        "name": "Neo4j",
+        "attributes": {
+        "model": "Graph",
+        "own_deployment": true,
+        "write_heavy": false,
+        "high_security": true
+        }
+    }
+]

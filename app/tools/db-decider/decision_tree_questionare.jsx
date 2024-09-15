@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react"
 
 function TreeNode({currentNode, setCurrentNode}) {
-    console.log(currentNode)
-
     const handleClick = (answerIndex) => {
         const answerNode = currentNode.answers[answerIndex]
         if (answerNode.nextNode) {setCurrentNode(answerNode.nextNode)} else {setCurrentNode()}
@@ -10,11 +8,13 @@ function TreeNode({currentNode, setCurrentNode}) {
     }
 
     return (
-        <div>
+        <div className="block">
             <h2>{currentNode.question}</h2> 
-            {currentNode.answers.map((answer, index) => (
-                <button key={currentNode.question + answer.text} onClick={() => {handleClick(index)}}>{answer.text}</button>
-            ))}   
+            <div className="buttonRow">
+                {currentNode.answers.map((answer, index) => (
+                    <button key={currentNode.question + answer.text} onClick={() => {handleClick(index)}}>{answer.text}</button>
+                ))}   
+            </div>
         </div>
     )
 }
@@ -34,10 +34,10 @@ export default function DecisionTreeQuestion({decisionTree, onFoundRecommendatio
     }, [currentNode]);
     
     return (
-        <div>
+        <>
             {!('recommendation' in currentNode) ? (
                 <TreeNode currentNode={currentNode} setCurrentNode={setCurrentNode} />
-            ): null}
-        </div>
+            ): <p>thinking...</p>}
+        </>
     )
 }

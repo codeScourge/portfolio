@@ -9,13 +9,13 @@
             {
               "text": "yes",
               "nextNode": {
-                "recommendation": "graph"
+                "recommendation": "Graph"
               }
             },
             {
               "text": "no",
               "nextNode": {
-                "recommendation": "relational"
+                "recommendation": "Relational"
               }
             }
           ]
@@ -25,18 +25,24 @@
       {
         "text": "no",
         "nextNode": {
-          "question": "How can you best describe your data? a) a table (columns don't have to match between rows) or b) nested JSON",
+          "question": "How can you best describe your data? a) a table (columns don't have to match between rows) or b) nested JSON or c) simple keys and values",
           "answers": [
             {
               "text": "a",
               "nextNode": {
-                "recommendation": "wide-column"
+                "recommendation": "Wide-Column"
               }
             },
             {
               "text": "b",
               "nextNode": {
-                "recommendation": "document"
+                "recommendation": "Document"
+              }
+            },
+            {
+              "text": "c",
+              "nextNode": {
+                "recommendation": "Key-Value"
               }
             }
           ]
