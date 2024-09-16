@@ -1,5 +1,5 @@
 {
-    "question": "Are you an enterprise where you would save money by rolling your own database and have the ressources to use an entire engineer for managing that thing?",
+    "question": "Do you want/need to be able to host this yourself?",
     "answers": [
         {
             "text": "yes",

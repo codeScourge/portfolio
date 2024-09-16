@@ -7,14 +7,14 @@ import "./page.scss"
 
 import GoBackSVG from "@/components/goback/comp";
 
-const mdFolder = path.join(process.cwd(), 'markdown', 'blog');
+const mdFolder = path.join(process.cwd(), 'public', 'markdown', 'blog');
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join());
 
   return files.map((filename) => ({
     slug: filename.replace('.md', ''),
-  }));
+  }));  
 }
 
 export async function getPostData(slug) {

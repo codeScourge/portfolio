@@ -9,10 +9,14 @@ function TreeNode({currentNode, setCurrentNode}) {
 
     return (
         <div className="block">
-            <h2>{currentNode.question}</h2> 
+            <p>{currentNode.question}</p> 
             <div className="buttonRow">
                 {currentNode.answers.map((answer, index) => (
-                    <button key={currentNode.question + answer.text} onClick={() => {handleClick(index)}}>{answer.text}</button>
+                    <button key={currentNode.question + answer.text} onClick={() => {handleClick(index)}}>
+                        <span>
+                            {answer.text}
+                        </span>
+                    </button>
                 ))}   
             </div>
         </div>

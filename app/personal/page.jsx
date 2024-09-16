@@ -25,7 +25,7 @@ export default function Home() {
             <li>Bodybuilding</li>
             <li>Snowboarding</li>
             <li>Learning random stuff</li>
-            <li>Watching People shit-talk on <a href="https://x.com/ivan_bkrv">Twitter</a></li>
+            <li>Watching People shit-talk on <a href="https://x.com/scourge_strike">Twitter</a></li>
           </ul>
         </div>
 
@@ -33,7 +33,7 @@ export default function Home() {
 
         <div className="block">
           <h2>Consumption</h2>
-          <p>Favorite Books can be found at <a href="https://www.goodreads.com/user/show/181216131-ivan">GoodReads</a></p>
+          <p>Check out my <a href="https://www.goodreads.com/user/show/181216131-ivan">Favorite Books</a></p>
           <p>The same counts for <a href="https://myanimelist.net/animelist/sc0urge">that asian stuff</a></p>
         </div>
 

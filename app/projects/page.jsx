@@ -42,13 +42,13 @@ This was also the first time taking care of Domain, DNS, and SSL certificates.
             <Image src={govshare} alt='Flowchart of the process' />
             <p>
 For a client at our AI-agency, I built an automatic data processing pipeline for analyzing content.
-\n
+<br />
 Articles from the web were scraped using Selenium and BS4.
-\n
+<br />
 The data was then processed using OpenAI and Huggingface models.
-\n
+<br />
 Integration into Airtable allowed the results to be easily interpreted by humans.
-\n
+<br />
 Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
             </p>
         </div>
@@ -58,12 +58,12 @@ Everything was powered by event-driven architecture on AWS using Queues, Webhook
         <div className="block">
             <h2>Telegram Bot</h2>
             <p>
-As a side-project I developed and monetized a translator AI-Telegram bot, which could be prompted to use
+To try myself in B2C, I built and monetized a translator AI-Telegram bot, which could be prompted to use
 dialects or specific speaking styles.
-\n
+<br />
 Subscriptions were done using YooKassa (Stripe Alternative).
-It also includes an admin panel built using ReactJS.
-\n
+It also included an admin panel built using ReactJS.
+<br />
 It was marketed using YandexAds and posts in Telegram Channels.
             </p>
         </div>
@@ -74,12 +74,12 @@ It was marketed using YandexAds and posts in Telegram Channels.
             <h2>Boilerplate</h2>
             <Image src={shippil} alt='Screenshot of Graphic demonstating pros of the boilerplate' />
             <p>
-I also built <a href="https://shippil.xyz">ShipPil</a>, the Boilerplate for Flask developers. 
-\n
+Thinking I was gonna be rich like Marc Lou, I built <a href="https://shippil.xyz">ShipPil</a>, a Boilerplate for Flask developers. 
+<br />
 It has everything, from a full bundling setup with  ESLint and PostCS, to a powerful CDN for protection and performance.
-\n
-The infrastructure (runtime on Lambda Functions and NoSQL DynamoDB as database) is defined as code using the Serverless Framework.
-\n
+<br />
+The infrastructure (runtime on Lambda Functions and DynamoDB as database) is defined as code using the Serverless Framework.
+<br />
 A strong emphasis is also put on security, taking care of things like CSRF, CSP, and input cleaning. 
 See a detailed documentation <a href="https://ivan.mintlify.app/intro/00_motivation">here</a>
             </p>

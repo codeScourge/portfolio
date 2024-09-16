@@ -20,7 +20,7 @@ function findDatabaseMatch(inputAttributes) {
       const attributes = db.attributes;
       if (
         attributes.model === inputAttributes.model &&
-        attributes.own_deployment === inputAttributes.own_deployment &&
+        ((attributes.own_deployment === true) || (attributes.own_deployment === false && inputAttributes.own_deployment === false)) &&
         attributes.write_heavy === inputAttributes.write_heavy &&
         attributes.high_security === inputAttributes.high_security
       ) {
@@ -79,6 +79,7 @@ export default function Page({}) {
             <div className="block">
                 {name && <p>You should choose {name}</p>}
                 {explanation}
+                <a href="/blog/00_how_to_choose_a_db">Want to learn why?</a>
             </div>
         )
     }
