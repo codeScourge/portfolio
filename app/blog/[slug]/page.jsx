@@ -10,11 +10,15 @@ import GoBackSVG from "@/components/goback/comp";
 const mdFolder = path.join(process.cwd(), 'content', 'blog');
 
 export async function generateStaticParams() {
-  const files = fs.readdirSync(path.join());
+  const mdFolder = path.join(process.cwd(), 'content', 'blog'); // Correct path to the blog folder
+  const files = fs.readdirSync(mdFolder);
 
-  return files.map((filename) => ({
-    slug: filename.replace('.md', ''),
-  }));  
+  // Filter out non-Markdown files
+  return files
+    .filter((filename) => filename.endsWith('.md')) // Only process .md files
+    .map((filename) => ({
+      slug: filename.replace('.md', ''),
+    }));
 }
 
 export async function getPostData(slug) {
