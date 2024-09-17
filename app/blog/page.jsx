@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 
 import GoBackSVG from "@/components/goback/comp";
 
-const mdFolder = path.join(process.cwd(), 'public', 'markdown', 'blog');
+const mdFolder = path.join(process.cwd(), 'content', 'blog');
 
 export async function getPosts() {
   const files = fs.readdirSync(path.join(mdFolder));
