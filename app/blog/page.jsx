@@ -10,7 +10,7 @@ const mdFolder = path.join(process.cwd(), 'content', 'blog');
 export async function getPosts() {
   const files = fs.readdirSync(path.join(mdFolder));
 
-  const posts = files.map((filename) => {
+  const posts = files.filter((filename) => filename.endsWith('.md')).map((filename) => {
     const slug = filename.replace('.md', '');
 
     const markdownWithMeta = fs.readFileSync(
