@@ -22,6 +22,7 @@ export default function Home() {
 
         <div className="block">
             <h2>ChatRPG</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XEQg4dG_G8o?si=a3T95CdhKocQJRdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
             <p>
 My web development journey started with a text-adventure generation engine built 
 over the OpenAI API. 
