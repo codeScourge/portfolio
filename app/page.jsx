@@ -8,7 +8,7 @@ export default function Home() {
 
       <a href="/projects">my projects</a>
       <a href="/personal">about me</a>
-      <a href="https://github.com/codeScourge">my techstack (GitHub)</a>
+      <a target="_blank" href="https://github.com/codeScourge">my techstack (GitHub)</a>
       <a href="/blog">my shitty texts</a>
     </>
   );

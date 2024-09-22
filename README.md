@@ -1,5 +1,4 @@
 
-
 #### What I have done in the repo
 While following https://developers.cloudflare.com/ssl/origin-configuration/origin-ca/ I have
 - pulled all IP CloudFlare IP ranges so I can (only) allow them

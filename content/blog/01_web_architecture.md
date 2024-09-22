@@ -5,9 +5,13 @@ date: "2024-09-22"
 
 
 There is a big divide in the Software Engineering World between two groups:
+
 a) the people over-engineering the fuck out of their todo-app
+
 b) the people not doing it
-What do both of them have in common? They don't have any users, just like most of the applications
+
+What do both of them have in common? They don't have any users, just like most of the applications.
+
 
 This was supposed to be a technical deep dive into Systems Engineering of what I learned from [one](https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?ac=1&from_search=true&qid=sjo9yA2czG&rank=1) or the [other](https://www.goodreads.com/book/show/23615147-web-scalability-for-startup-engineers?ref=nav_sb_ss_1_21) book, but what I noticed is that it is more about knowing about what can actually can go wrong and how to fix it, instead of knowing about the ideal distributed, high-availability, microservices, big-data, AI, TDD, dipshit system.
 

@@ -11,8 +11,8 @@ export default function Home() {
             <h2>Backstory</h2>
             <p>
               I was born in Russia and moved to Germany at 6 years old. At 14 I started to get into (very basic) ML and programming in general. 
-              One year later I used that knowledge and interest to cofound an <a href="https://neural-reality.de/">AI agency</a>. During that time I taught myself Web Development
-              and the Infrastructue behind it on the Cloud. Recently moved to Berlin to study at <a href="https://code.berlin/en/">CODE University of Applied Sciences Berlin</a>
+              One year later I used that knowledge and interest to cofound an AI-software agency. During that time I taught myself Web Development
+              and the Infrastructue behind it on the Cloud. Recently moved to Berlin to study at <a target="_blank" href="https://code.berlin/en/">CODE University of Applied Sciences Berlin</a>
             </p>
         </div>
 

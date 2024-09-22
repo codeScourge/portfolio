@@ -75,14 +75,14 @@ It was marketed using YandexAds and posts in Telegram Channels.
             <h2>Boilerplate</h2>
             <Image src={shippil} alt='Screenshot of Graphic demonstating pros of the boilerplate' />
             <p>
-Thinking I was gonna be rich like Marc Lou, I built <a href="https://shippil.xyz">ShipPil</a>, a Boilerplate for Flask developers. 
+Thinking I was gonna be rich like Marc Lou, I built <a target="_blank" href="https://shippil.xyz">ShipPil</a>, a Boilerplate for Flask developers. 
 <br />
 It has everything, from a full bundling setup with  ESLint and PostCS, to a powerful CDN for protection and performance.
 <br />
 The infrastructure (runtime on Lambda Functions and DynamoDB as database) is defined as code using the Serverless Framework.
 <br />
 A strong emphasis is also put on security, taking care of things like CSRF, CSP, and input cleaning. 
-See a detailed documentation <a href="https://ivan.mintlify.app/intro/00_motivation">here</a>
+See a detailed documentation <a target="_blank" href="https://ivan.mintlify.app/intro/00_motivation">here</a>
             </p>
         </div>
 
