@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+  mynetwork:
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - portfolio
+    networks:
+      - mynetwork
+
+  portfolio:
+    build: .
+    restart: always
+    networks:
+      - mynetwork
