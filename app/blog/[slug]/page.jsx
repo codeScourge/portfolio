@@ -1,25 +1,35 @@
 import fs from 'fs';
 import path from 'path';
+
 import matter from 'gray-matter';
+
 import { remark } from 'remark';
-import html from 'remark-html';
-import "./page.scss"
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+
+import rehypeStringify from 'rehype-stringify';
+import rehypeRaw from 'rehype-raw';
+import rehypeExternalLinks from 'rehype-external-links';
+
 
 import GoBackSVG from "@/components/goback/comp";
+import "./page.scss"
+
 
 const mdFolder = path.join(process.cwd(), 'content', 'blog');
 
+
 export async function generateStaticParams() {
-  const mdFolder = path.join(process.cwd(), 'content', 'blog'); // Correct path to the blog folder
+  const mdFolder = path.join(process.cwd(), 'content', 'blog');
   const files = fs.readdirSync(mdFolder);
 
-  // Filter out non-Markdown files
   return files
-    .filter((filename) => filename.endsWith('.md')) // Only process .md files
+    .filter((filename) => filename.endsWith('.md')) 
     .map((filename) => ({
       slug: filename.replace('.md', ''),
     }));
 }
+
 
 export async function getPostData(slug) {
   const markdownWithMeta = fs.readFileSync(
@@ -28,8 +38,13 @@ export async function getPostData(slug) {
   );
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
-
-  const processedContent = await remark().use(html).process(content);
+  const processedContent = await remark()
+    .use(remarkParse) // Parse markdown
+    .use(remarkRehype, { allowDangerousHtml: true }) // Convert markdown to HTML, allowing raw HTML
+    .use(rehypeRaw) // Parse the raw HTML
+    .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }) // Add target="_blank" to <a> tags
+    .use(rehypeStringify) // Stringify the HTML
+    .process(content);
   const contentHtml = processedContent.toString();
 
   return {
