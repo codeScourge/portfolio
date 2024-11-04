@@ -2,6 +2,13 @@
 REMOTE_USER="root"
 REMOTE_HOST="116.203.254.26"
 
+
+read -p "Enter a commit message: " COMMIT_MESSAGE
+git add -A
+git commit -m "${COMMIT_MESSAGE}"
+git push origin main
+
+
 ssh ${REMOTE_USER}@${REMOTE_HOST} << EOF
     cd /root/applications/portfolio
 

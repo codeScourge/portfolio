@@ -12,6 +12,25 @@ export default function Home() {
       <>
         <GoBackSVG url="/" />
 
+
+
+
+        {/* <div className="block">
+            <h2>Telegram Bot</h2>
+            <p>
+To try myself in B2C, I built and monetized a translator AI-Telegram bot, that had voice input/output.
+<br />
+<br />
+Subscriptions were done using YooKassa (russian Stripe Alternative).
+<br />
+<br />
+It was marketed using YandexAds and posts in Telegram Channels, but never took off (no wonder why....)
+            </p>
+        </div>
+
+        <hr /> */}
+
+
         <div className="block">
             <h2>GitHub Lead Clipper Plugin</h2>
             <Image src={chrome} alt='Screenshot of the Plugin' />

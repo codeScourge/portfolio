@@ -19,6 +19,28 @@ export default function Home() {
 
 
         <div className="block">
+            <h2>data-processing pipeline</h2>
+            <Image src={govshare} alt='Flowchart of the process' />
+            <p>
+For a client at our AI-agency, I built an automatic data processing pipeline for analyzing and processing unstructured webpage into their Content Managment System.
+<br />
+<br />
+Articles from the web were scraped using Selenium and BS4.
+<br />
+<br />
+The data was then processed using OpenAI and Huggingface models.
+<br />
+<br />
+Integration into Airtable allowed the results to be easily interpreted by humans.
+<br />
+<br />
+Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
+            </p>
+        </div>
+
+        <hr />
+
+        <div className="block">
             <h2>ChatRPG</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/XEQg4dG_G8o?si=a3T95CdhKocQJRdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
             <p>
@@ -43,47 +65,10 @@ I tried to market this thing with some shitty Reddit posts, which obviously didn
         <hr />
 
         <div className="block">
-            <h2>Data-processing Pipeline</h2>
-            <Image src={govshare} alt='Flowchart of the process' />
-            <p>
-For a client at our AI-agency, I built an automatic data processing pipeline for analyzing content.
-<br />
-<br />
-Articles from the web were scraped using Selenium and BS4.
-<br />
-<br />
-The data was then processed using OpenAI and Huggingface models.
-<br />
-<br />
-Integration into Airtable allowed the results to be easily interpreted by humans.
-<br />
-<br />
-Everything was powered by event-driven architecture on AWS using Queues, Webhooks, etc.
-            </p>
-        </div>
-
-        <hr />
-
-        <div className="block">
-            <h2>Telegram Bot</h2>
-            <p>
-To try myself in B2C, I built and monetized a translator AI-Telegram bot, that had voice input/output.
-<br />
-<br />
-Subscriptions were done using YooKassa (russian Stripe Alternative).
-<br />
-<br />
-It was marketed using YandexAds and posts in Telegram Channels, but never took off (no wonder why....)
-            </p>
-        </div>
-
-        <hr />
-
-        <div className="block">
-            <h2>Boilerplate</h2>
+            <h2>development boilerplate</h2>
             <Image src={shippil} alt='Screenshot of Graphic demonstating pros of the boilerplate' />
             <p>
-Thinking I was gonna get get rich like Marc Lou, I built <a target="_blank" href="https://shippil.xyz">ShipPil</a>, a Boilerplate for Flask developers. 
+Thinking I was gonna get get rich like Marc Lou (some guy from Twitter making thousands), I built <a target="_blank" href="https://shippil.xyz">ShipPil</a>, a Boilerplate for Flask developers. 
 <br />
 <br />
 The infrastructure (runtime on Lambda Functions and DynamoDB as database) is defined as code using the Serverless Framework.
@@ -101,14 +86,18 @@ The <a target="_blank" href="https://ivan.mintlify.app/intro/00_motivation">docu
 
         <hr />
 
+
         <div className="block">
-            <h2>In-House AI-Client</h2>
-            <Image src={client} alt='Screenshot of the Client' />
+            <h2>more agency stuff</h2>
+            {/* <Image src={client} alt='Screenshot of the Client' /> */}
             <p>
 For another client I built an in-house ChatGPT-like client with a RAG system.
+The Vector Store and the Model itself (LLama3.1 70b) was deployed locally.
 <br />
 <br />
-For data-compliance reasons the Vector Store and even the Model itself (LLama3.1 70b) was deployed locally.
+After successfully this as service for multiple clients, we are also currently developing a platform for
+alt-tag generation. You simply upload a CSV export from your CRM and get thousands of SEO and accessibility 
+optimized tags. 
             </p>
         </div>
 

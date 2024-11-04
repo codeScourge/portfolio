@@ -44,7 +44,7 @@ export async function getPostData(slug) {
     .use(rehypeRaw) // Parse the raw HTML
     .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }) // Add target="_blank" to <a> tags
     .use(rehypeStringify) // Stringify the HTML
-    .process(content);
+    .process(content);d
   const contentHtml = processedContent.toString();
 
   return {
